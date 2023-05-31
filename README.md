@@ -6,7 +6,7 @@ This PowerShell script is designed to help you install an Azure DevOps extension
 
 Before running this script, please ensure you have the following:
 
-- PowerShell version 5.1 or later.
+- PowerShell version 7.3 or later. You can download PowerShell from [here](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
 
 ## Usage
 
@@ -29,6 +29,7 @@ The script accepts the following parameters:
 - `PublisherName`: Publisher name for the extension. Must meet the specified pattern and length criteria. **This parameter is mandatory**.
 - `ExtensionName`: Name of the extension. Must meet the specified pattern and length criteria. **This parameter is mandatory**.
 - `Token`: Personal Access Token with at least the scope `Extensions (Read & Manage)` . **This parameter is mandatory**.
+  - For more information on how to create a Personal Access Token (PAT), please refer to [this documentation](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).
 
 > Note: The `PublisherName` and `ExtensionName` parameters can be found in the marketplace URL for the extension. For example, if the URL is `https://marketplace.visualstudio.com/items?itemName=my-publisher.my-extension`, then the `PublisherName` is `my-publisher` and the `ExtensionName` is `my-extension`.
 
