@@ -30,6 +30,8 @@ The script accepts the following parameters:
 - `ExtensionName`: Name of the extension. Must meet the specified pattern and length criteria. **This parameter is mandatory**.
 - `Token`: Personal Access Token with at least the scope `Extensions (Read & Manage)` . **This parameter is mandatory**.
 
+> Note: The `PublisherName` and `ExtensionName` parameters can be found in the marketplace URL for the extension. For example, if the URL is `https://marketplace.visualstudio.com/items?itemName=my-publisher.my-extension`, then the `PublisherName` is `my-publisher` and the `ExtensionName` is `my-extension`.
+
 ## Example
 
 Here is an example of how to use this script:
